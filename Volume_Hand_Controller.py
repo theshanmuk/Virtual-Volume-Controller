@@ -3,16 +3,14 @@ import numpy as np
 import math
 import time
 import Hand_Tracking as ht
-# Mouse_Packages
+# Volume_Packages
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 from comtypes import CLSCTX_ALL
 from ctypes import cast, POINTER
 
-
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
-
 pTime = 0
 detector = ht.handDetector(detectionCon=0.7)
 
@@ -23,7 +21,6 @@ interface = devices.Activate(
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 vol_bar = 320
 vol_per = 0
-
 
 while True:
     # Find hand Landmarks
