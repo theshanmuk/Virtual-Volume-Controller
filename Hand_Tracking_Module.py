@@ -9,6 +9,7 @@ import mediapipe as mp
 class handDetector():
 
     def __init__(self, mode=False, maxHands=2, detectionCon=0.5, trackCon=0.5):
+
         self.mode = mode
         self.maxHands = maxHands
         self.detectionCon = detectionCon
@@ -35,6 +36,7 @@ class handDetector():
         return img
 
     def findPosition(self, img, handNo=0, draw=True):
+
         self.landmark_list = []
         # Hand Box
         xList = []
@@ -61,6 +63,7 @@ class handDetector():
         return self.landmark_list, bbox
 
     def fingersUp(self):
+
         fingers = []
         # Thumb
         if self.landmark_list[self.tipIds[0]][1] < self.landmark_list[self.tipIds[0] - 1][1]:
@@ -77,6 +80,7 @@ class handDetector():
         return fingers
 
     def findDistance(self, p1, p2, img, draw=True):
+        
         x1, y1 = self.landmark_list[p1][1:]
         x2, y2 = self.landmark_list[p2][1:]
         length = math.hypot(x2 - x1, y2 - y1)
