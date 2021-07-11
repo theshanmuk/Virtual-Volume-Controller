@@ -8,7 +8,7 @@
 • Find hand Landmarks
 • Check Thumb & Index fingers are open
 • Calculating Index_Finger & Thumb_Finger Distance
-• Equating Distance Values wih the Volume Values by Interpolation method
+• Converting Distance wih the Volume Values by Interpolation method
 • Drawing & Displaying Anotations
 ```
 ## Used Interpolation concept 
