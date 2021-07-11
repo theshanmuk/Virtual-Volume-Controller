@@ -1,8 +1,4 @@
-import imp
 import cv2
-import numpy as np
-import math
-import time
 import mediapipe as mp
 
 
