@@ -3,7 +3,7 @@
 • We can control volume virtually in front of camera by fingers
 # opencv-python & mediapipe
 ```
-# Steps
+## Steps
 ```
 • Find hand Landmarks
 • Check Thumb & Index fingers are open
